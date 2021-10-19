@@ -1,5 +1,6 @@
 import os
 
+# imports variables from the environment and wraps them into a Config class
 class Config:
 
     SECRET_KEY = os.environ['SECRET_KEY'] # this should be a secret !
