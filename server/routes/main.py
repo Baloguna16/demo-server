@@ -1,6 +1,6 @@
 from flask import Blueprint, request, make_response
 
-from .utils import auth_required, SESSION_TOKEN
+from server.utils import auth_required, SESSION_TOKEN
 
 bp = Blueprint('main', __name__)
 

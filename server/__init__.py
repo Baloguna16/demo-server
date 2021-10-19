@@ -1,7 +1,8 @@
+import os
 from flask import Flask
 from flask_cors import CORS
 
-from .utils.config import Config
+from .utils import Config
 
 def create_app():
     config_object = Config()
