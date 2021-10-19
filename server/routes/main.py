@@ -19,7 +19,7 @@ def get_data():
 def get_protected_data():
     status_code = 200
     data = {
-        "messager": "Me, of course!",
+        "messager": "Me, of course! But this time protected.",
         "message": "I love cheese... it's gouda!"
     }
     return data, status_code
@@ -28,6 +28,6 @@ def get_protected_data():
 def post_data():
     data = request.json
     status_code = 200
-    data = {"secret": data['secret']}
+    data = {"message": f"You shared something! '{data['secret']}'"}
     response = make_response(data, status_code)
     return response
